@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+}
+.conteiner{
+   text-align: center;
+   margin: 10vw;
+   background-color: whitesmoke;
+   height: 80vh;
+   width: 60vw;
+   border-radius: 10px;
+   border: 2px solid black;
+}
+
+.formulary{
+    margin-top: 3vw;
+}
+.create{
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 5px;
+}
+.newTask{
+    background-color: aqua;
+    width: 40vw;
+    height: 3.7vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:10px;
+    
+}
+.boxTask{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#task{
+    width: 40vw;
+    height: 3.7vh;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
