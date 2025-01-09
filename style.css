@@ -1,36 +1,41 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 1rem;
-    
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
-    background-color: cadetblue;
+    background-color: rgb(48, 49, 49);
 }
-.conteiner{
-   text-align: center;
-   margin: 10vw;
-   background-color: whitesmoke;
-   height: 80vh;
-   width: 60vw;
-   border-radius: 10px;
-   border: 2px solid black;
+h1{
+    font-size: 1.5rem;
 }
 
-.formulary{
+.container {
+    text-align: center;
+    margin: 10vw;
+    background-color: whitesmoke;
+    height: 80vh;
+    width: 60vw;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.formulary {
     margin-top: 3vw;
 }
-.create{
+
+.create {
     border-radius: 8px;
     font-size: 1rem;
     padding: 5px;
 }
-.newTask{
-    background-color: aqua;
+
+.newTask {
+    background-color: rgb(140, 146, 221);
     width: 40vw;
     height: 3.7vh;
     align-items: center;
@@ -38,19 +43,98 @@ body{
     justify-content: space-between;
     border: 2px solid black;
     border-radius: 10px;
-    padding:10px;
-    
-}
-.boxTask{
-    display: flex;
-    justify-content: center;
-    
+    padding: 10px;
 }
 
-#task{
+.boxTask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#task {
     width: 40vw;
     height: 3.7vh;
     border-radius: 10px;
     padding: 10px;
-    
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(241, 236, 236);
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90vw;
+
+        height: auto;
+        margin: 5vw;
+    }
+
+    #task {
+        width: 80vw;
+
+        height: 5vh;
+        font-size: 0.9rem;
+  
+    }
+
+    .newTask {
+        width: 80vw;
+
+        height: auto;
+        padding: 8px;
+        font-size: 0.9rem;
+
+    }
+
+    .create {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 80vw;
+        height: auto;
+        margin: 5vw;
+    }
+
+    #task {
+        width: 70vw;
+        height: 4.5vh;
+    }
+
+    .newTask {
+        width: 70vw;
+        padding: 10px;
+    }
+
+    .create {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .container {
+        width: 60vw;
+        margin: 10vw;
+    }
+
+    #task {
+        width: 40vw;
+        height: 3.7vh;
+    }
+
+    .newTask {
+        width: 40vw;
+        padding: 10px;
+    }
 }
